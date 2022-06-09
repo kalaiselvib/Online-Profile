@@ -34,6 +34,11 @@ body {
     overflow-x: hidden;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: 100%;
+}
+
 .page-wrapper {
     background-color: var(--main-bg-color);
     overflow: hidden;
@@ -54,12 +59,13 @@ body {
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
-    padding-bottom: 1rem;
+    padding: 5rem 0rem;
 }
 
 .hero-img {
-    height: 400px;
-    width: 400px;
+    height: 435px;
+    width: 429px;
+    text-align: center;
 }
 
 .sub-list li {
@@ -184,4 +190,124 @@ body {
 
 .project-link img:hover {
     transform: scale(.9);
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 0.9rem;
+    }
+    .navbar {
+        padding: 0.5rem 0.3rem;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.3rem;
+        color: #fff;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 13px;
+        padding: 5px 5px;
+    }
+    .section {
+        min-height: 50vh;
+    }
+    .hero-img {
+        height: 15rem;
+        width: 15rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        margin-bottom: 3rem;
+    }
+    .orbit {
+        height: 35vh;
+        width: 80%;
+    }
+    .orbit img {
+        height: 35px;
+    }
+    .orbit .skill-icons img:nth-child(3) {
+        bottom: 39px;
+        left: 22px;
+    }
+    .orbit .skill-icons img:nth-child(4) {
+        top: 115px;
+        left: -14px;
+    }
+    .orbit .skill-icons img:nth-child(5) {
+        bottom: 8px;
+    }
+    .about-img-container {
+        height: 423px;
+        width: 84%;
+    }
+    .about-img {
+        height: 218px;
+        width: 197px;
+    }
+    .place-img-1 {
+        right: 21px;
+        top: 34px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0.3rem;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.3rem;
+        color: #fff;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+    .hero-img {
+        height: 20rem;
+        width: 20rem;
+        text-align: center;
+    }
+    .orbit {
+        height: 45vh;
+    }
+    .orbit img {
+        height: 40px;
+    }
+    .orbit .skill-icons img:nth-child(3) {
+        bottom: 39px;
+        left: 53px;
+    }
+    .orbit .skill-icons img:nth-child(4) {
+        top: 115px;
+        left: -6px;
+    }
+    .orbit .skill-icons img:nth-child(5) {
+        bottom: 8px;
+    }
+    .content {
+        margin-bottom: 3rem;
+    }
+    .about-img-container {
+        height: 458px;
+        width: 84%;
+    }
+    .about-img {
+        height: 268px;
+        width: 216px;
+    }
+    .place-img-1 {
+        right: 21px;
+        top: 34px;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }
